@@ -46,6 +46,9 @@ function takeCommand(message){
     if(message.includes("hello")||message.includes("hey")){
         speak("hello cutey,what can i help you?")
     }
+    else if(message.includes("How are you")){
+        speak("I am good, What about you?")
+    }
     else if(message.includes("who are you")){
         speak("I am Lisa, Your virtual assistant, created by Miss Lalitha")
     }else if(message.includes("open youtube")){
@@ -59,6 +62,14 @@ function takeCommand(message){
     else if(message.includes("open facebook")){
         speak("opening facebook...")
         window.open("https://facebook.com/","_blank")
+    }
+    else if(message.includes("open github")){
+        speak("opening github...")
+        window.open("https://github.com/","_blank")
+    }
+    else if(message.includes("open linkedin")){
+        speak("opening linkedin...")
+        window.open("https://www.linkedin.com/feed/","_blank")
     }
     else if(message.includes("open instagram")){
         speak("opening instagram...")
